@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="Main.css">
+      <title>My Portfolio</title>
+      <script src="https://kit.fontawesome.com/075fd4ed16.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+      <div id="header">
+            <div class="container">
+                  <nav>
+                        <img src="images/My logo.jpg" alt="#" class="logo">
+                        <ul id="SideMenu">
+                              <li><a href="#header">Home</a></li>
+                              <li><a href="#about">About</a></li>
+                              <li><a href="#Services">Services</a></li>
+                              <li><a href="#Portfolio">Projects</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                              <i class="fa-solid fa-xmark" onclick="CloseMenu()"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="OpenMenu()"></i>
+                  </nav>
+                  <div class="header-text" style="display: inline-block;">
+                        <p>Full Stack Developer</p>
+                        <h1>Hi, I'm <span>Nishant Kumar</span></h1>
+                        <div class="coverimage"></div>
+                  </div>
+            </div>
+
+      </div>
+
+      <!-- -------------------------------ABOUT------------------------------------- -->
+      <div id="about">
+            <div class="container">
+                  <div class="row">
+                        <div class="about-col-1">
+                              <img src="images/MyPicture.jpeg"
+                                    style="display: flex; height: 62vh; position: relative ;top:-10%;">
+                        </div>
+                        <div class="about-col-2">
+                              <h1 class="Sub-title">About me</h1>
+                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis cumque
+                                    blanditiis dolorum molestiae obcaecati perspiciatis praesentium perferendis
+                                    dignissimos cum, soluta laborum quisquam labore, iure quas pariatur minus nostrum
+                                    voluptatibus! Magnam commodi numquam vero et distinctio quas libero veritatis
+                                    eveniet, accusamus ad, maxime nisi neque iusto perspiciatis explicabo itaque
+                                    voluptatem voluptas quibusdam ducimus ratione cumque. Temporibus dolor voluptas quod
+                                    ullam architecto repellat, maiores reprehenderit nisi neque, laborum porro
+                                    voluptate, earum accusamus velit veniam facere distinctio? Cupiditate, sint odio,
+                                    velit sunt eos praesentium alias natus nisi ea a quae maxime tempora nam laudantium?
+                                    Sunt accusantium, ab eum amet consequuntur iusto. Dolorem.</p>
+                              <div class="tab-titles">
+                                    <p class="tab-links acitve-links" onclick="opentab('Aims')">Aim</p>
+                                    <p class="tab-links" onclick="opentab('skill')">Skills</p>
+                                    <p class="tab-links" onclick="opentab('Project')">Projects</p>
+                                    <p class="tab-links" onclick="opentab('Experiences')">Experience</p>
+                                    <p class="tab-links" onclick="opentab('Educations')">Education</p>
+                              </div>
+
+
+                              <!-- ------------------------------------------AIM--------------------------------------------------------- -->
+
+                              <div class="tab-contents acitve-tab" id="Aims">
+                                    <ul>
+                                          <li><span>Achieve Goals</span><br>The aim of my life is to achieve those every
+                                                dream which i dreamed with open eyes and to full fill my parents
+                                                expectations from me and give my family a better life to live
+                                                hapilly.<br></li><br>
+
+
+                                    </ul>
+                              </div>
+
+
+                              <!-- ------------------------------------------skills--------------------------------------------------------- -->
+
+
+                              <div class="tab-contents " id="skill">
+                                    <ul>
+                                          <li><span>Full Stack</span> <br>Creating complete Website Front-End to
+                                                Back-End
+                                                using Django in Python<br></li><br>
+
+                                          <li><span>UI/UX</span><br>Designing Window App Interface using Tkinter in
+                                                Python</li><br>
+
+                                          <li><span>Database</span><br>Connectivity of Database in MySql and Python</li>
+                                          <br>
+
+                                          <li><span>Photoshop</span><br>Designing poster designs, logo designs, online
+                                                invitation cards, greeting cards of a better quality. </li>
+                                    </ul>
+                              </div>
+
+
+                              <!-- ------------------------------------------Project--------------------------------------------------------- -->
+
+
+                              <div class="tab-contents" id="Project">
+                                    <ul>
+                                          <li><span>Bike Selling</span> <br>This is a Bike Selling Reference website
+                                                using ( Front-End HTML, CSS, JS and Back-End Django python)<br></li><br>
+
+                                          <li><span>Chat Application</span><br>This is a One to One chat application
+                                                using( Tkinter python)</li><br>
+
+                                          <li><span>Portfolio</span><br>I built my own portfolio because, a professional
+                                                portfolio is an excellent way to present the introduction in a
+                                                proffessional way. </li>
+                                    </ul>
+                              </div>
+
+
+
+
+
+                              <div class="tab-contents" id="Experiences">
+                                    <ul>
+                                          <li><span>Fresher</span> <br>As I'm a fresher i don't have any professional
+                                                work experience in a reputated company
+                                                yet but i've done some industrial training during the summer vaccation
+                                                of the university <br></li><br>
+
+                                          <li><span>Core Python</span><br>I've done the industrial training in core
+                                                python from Netmax technologies, Chandigarh. I've created a project
+                                                during this industrial training which is a desktop chat application
+                                                named as ChatApp which is an one-to-one chat application, which allows
+                                                you to chat with a single person at a time, the technologies used in
+                                                this
+                                                project are <span>Tkinter ( Python's
+                                                      frame work )</span>.</li><br>
+
+                                          <li><span>Full Stack Development</span> <br>I've done the industrial training
+                                                in
+                                                Full Stack Development from Netmax technologies, Chandigarh. I've
+                                                created a project during this industrial training which is basically a
+                                                reference website by which you can choose
+                                                your dream bike and can buy named as BikeWalah,
+                                                the technologies used in this project are
+                                                <span>HTML, CSS and JS</span> ( for Front-End ) and <span>Django</span>
+                                                ( for Back-End ) <br>
+                                          </li>
+                                    </ul>
+                              </div>
+
+
+
+
+                              <div class="tab-contents" id="Educations">
+                                    <ul>
+                                          <li><span>Becholers Degree</span> <br>
+                                                B.Tech ( CSE ) from DAV University (Pursuing in last year), will
+                                                complete in july, 2024 <br></li><br>
+
+                                          <li><span>Senior Secondary</span><br>March, 2020 from
+                                                DS. SD. SR. SEC. School
+                                                I got 79% marks in my senior secondary education, and I passed out
+                                                senior secondary education from
+                                                Punjab School Education Board. </li><br>
+
+                                          <li><span>Matriculation</span><br>March, 2018 from
+                                                DS. SD. SR. SEC. School
+                                                I got 54% marks in my Matriculation education, and I passed out
+                                                Matriculation education from
+                                                Punjab School Education Board.</li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+
+      <!-- ----------------------------------Aim-------------------------------------------- -->
+      <div id="Services">
+            <div class="container">
+                  <h1 class="Sub-title">My Services</h1>
+                  <div class="Services-list">
+                        <div>
+                              <i class="fa-solid fa-code"></i>
+                              <h2>Front-End</h2>
+                              <p>The aim of my life is to achieve those every
+                                    dream which i dreamed with open eyes and to full fill my parents
+                                    expectations from me and give my family a better life to live
+                                    hapilly.</p>
+                              <a href="#">Learn more</a>
+                        </div>
+
+
+                        <div>
+                              <i class="fa-brands fa-python"></i>
+                              <h2>Back-End </h2>
+                              <p>The aim of my life is to achieve those every
+                                    dream which i dreamed with open eyes and to full fill my parents
+                                    expectations from me and give my family a better life to live
+                                    hapilly.</p>
+                              <a href="#">Learn more</a>
+                        </div>
+
+
+                        <div>
+                              <i class="fa-solid fa-crop"></i>
+                              <h2>UI/UX</h2>
+                              <p>The aim of my life is to achieve those every
+                                    dream which i dreamed with open eyes and to full fill my parents
+                                    expectations from me and give my family a better life to live
+                                    hapilly.</p>
+                              <a href="#">Learn more</a>
+                        </div>
+
+
+                        <div>
+                              <i class="fa-solid fa-pen-nib"></i>
+                              <h2>Photoshop</h2>
+                              <p>The aim of my life is to achieve those every
+                                    dream which i dreamed with open eyes and to full fill my parents
+                                    expectations from me and give my family a better life to live
+                                    hapilly.</p>
+                              <a href="#">Learn more</a>
+                        </div>
+
+
+                  </div>
+
+            </div>
+      </div>
+
+
+
+      <!-- ----------------------------------Porfolio -------------------------------------------- -->
+
+      <div id="Portfolio">
+            <div class="container">
+                  <h1 class="Sub-title">My Projects</h1>
+                  <h3>Bike Selling reference website</h3>
+                  <div class="project-list">
+
+                        <div class="project">
+                              <img src="images/Screenshot 2023-09-05 160106.png">
+                              <div class="layer">
+                                    <h3>Landing Page</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, sed?</p>
+                                    <a href=""><i class="fa-solid fa-link"></i></a>
+                              </div>
+                        </div>
+
+                        <div class="project">
+                              <img src="images/Screenshot 2023-09-05 160153.png">
+                              <div class="layer">
+                                    <h3>Services Page</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, sed?</p>
+                                    <a href=""><i class="fa-solid fa-link"></i></a>
+                              </div>
+                        </div>
+
+                        <div class="project">
+                              <img src="images/Screenshot 2023-09-05 160355.png">
+                              <div class="layer">
+                                    <h3>Admin Pannel</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, sed?</p>
+                                    <a href=""><i class="fa-solid fa-link"></i></a>
+                              </div>
+                        </div>
+
+                  </div>
+
+                  <br><br><br><br><br><br><br>
+                  <div class="container2">
+                        <h1 class="Sub-title2">My Projects</h1>
+                        <h3>one-to-one chat application</h3>
+
+                        <div class="project-list2">
+
+                              <div class="project2">
+                                    <img src="images/Screenshot 2023-09-05 152819.png">
+                                    <div class="layer">
+                                          <h3>Login Page</h3>
+                                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, sed?
+                                          </p>
+                                          <a href=""><i class="fa-solid fa-link"></i></a>
+                                    </div>
+                              </div>
+
+                              <div class="project2">
+                                    <img src="images/Screenshot 2023-09-05 152843.png">
+                                    <div class="layer">
+                                          <h3>Signup Page</h3>
+                                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, sed?
+                                          </p>
+                                          <a href=""><i class="fa-solid fa-link"></i></a>
+                                    </div>
+                              </div>
+
+                              <div class="project2">
+                                    <img src="images/Screenshot 2023-09-05 153154.png">
+                                    <div class="layer">
+                                          <h3>Chat Window</h3>
+                                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, sed?
+                                          </p>
+                                          <a href=""><i class="fa-solid fa-link"></i></a>
+                                    </div>
+                              </div>
+
+                        </div>
+
+                        <a href="#" class="btn">See More</a>
+                  </div>
+            </div>
+
+
+            <!-- --------------------------------------Contact-------------------------------------------- -->
+
+            <div id="contact">
+                  <div class="container">
+                        <div class="row">
+                              <div class="contact-left">
+                                    <h1 class="Sub-title">Contact Me</h1>
+                                    <p><i class="fa-solid fa-paper-plane"></i> k.nishantt@yahoo.com</p>
+                                    <p><i class="fa-solid fa-phone-volume"></i> +91 90569 66809</p>
+                                    <div class="social-icons">
+                                          <a href="https://www.linkedin.com/in/nishant-kumar-31ba08282"><i
+                                                      class="fa-brands fa-linkedin"></i></a>
+                                          <a
+                                                href="https://www.facebook.com/profile.php?id=100012442231727&mibextid=LQQJ4d"><i
+                                                      class="fa-brands fa-facebook"></i></a>
+                                          <a href="https://instagram.com/mr.nishuu?igshid=OGQ5ZDc2ODk2ZA=="><i
+                                                      class="fa-brands fa-instagram"></i></a>
+                                    </div>
+
+                                    <a href="images/Nishant Kumar Resume.pdf" download class="btn btn2">Download CV</a>
+
+
+
+                              </div>
+                              <div class="contact-right">
+
+                                    <form name="submit-to-google-sheet">
+                                          <input type="text" name="Name" placeholder="Your Name" required>
+                                          <input type="email" name="E-Mail" placeholder="Your Email" required>
+                                          <textarea name="Message" rows="6" placeholder="Your Message"
+                                                required></textarea>
+                                          <button type="submit" class="btn btn2 ">Submit</button>
+                                    </form>
+
+                                    <span id="msg">
+
+                                    </span>
+
+                              </div>
+                        </div>
+
+
+                  </div>
+
+                  <div class="copyright">
+
+                  </div>
+
+            </div>
+
+
+
+
+
+            <script>
+
+                  var tablinks = document.getElementsByClassName("tab-links");
+                  var tabcontents = document.getElementsByClassName("tab-contents");
+
+                  function opentab(tabname) {
+                        for (tablink of tablinks) {
+                              tablink.classList.remove("acitve-links");
+                        }
+
+
+                        for (tabcontent of tabcontents) {
+                              tabcontent.classList.remove("acitve-tab");
+                        }
+
+                        event.currentTarget.classList.add("acitve-links")
+                        document.getElementById(tabname).classList.add("acitve-tab");
+                  }
+
+            </script>
+
+            <script>
+
+                  var SideMenu = document.getElementById("SideMenu");
+                  function OpenMenu() {
+                        SideMenu.style.right = "0";
+                  }
+                  function CloseMenu() {
+                        SideMenu.style.right = "-200px";
+                  }
+
+            </script>
+
+            <script>
+                  const scriptURL = 'https://script.google.com/macros/s/AKfycbzufubIB7lH1NWXVQ_eoElSSM8Jcx6jnDG4Cc-5OdamrTTEMKiLErlw16yEXtysELeR/exec'
+                  const form = document.forms['submit-to-google-sheet']
+                  const msg = document.getElementById("msg")
+
+
+                  form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                              .then(response => {
+                                    msg.innerHTML = "Message Sent Successfully"
+                                    setTimeout(function(){
+                                          msg.innerHTML = ""
+                                    }, 5000)
+                                    form.reset()
+                              })
+                              .catch(error => console.error('Error!', error.message))
+                  })
+            </script>
+
+</body>
+
+</html>
